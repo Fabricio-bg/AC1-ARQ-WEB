@@ -47,7 +47,7 @@ public class ChamadoController {
                 return ResponseEntity.ok(c);
             }
         }
-        return ResponseEntity.status(404).body("Reserva não encontrada!");
+        return ResponseEntity.status(404).body("Chamado não encontrado!");
     }
     
     @PutMapping("/atualizar/{id}")
@@ -64,7 +64,7 @@ public class ChamadoController {
                 return ResponseEntity.ok(c);
             }
         }
-        return ResponseEntity.status(404).body("Reserva não encontrada!");
+        return ResponseEntity.status(404).body("Chamado não encontrado!");
     }
     
     @DeleteMapping("/remover/{id}")
